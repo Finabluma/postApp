@@ -1,4 +1,4 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+const fetch = require('node-fetch');
 
 export default async (req, res) => {
 
@@ -38,7 +38,7 @@ export default async (req, res) => {
     if (!authJson.id) {
       res.status(401).json({
         error: 'Invalid token'
-      });
+      })
       return;
     }
 
@@ -63,8 +63,6 @@ export default async (req, res) => {
       },
       body: JSON.stringify(data)
     })
-
-    console.log('response', response)
 
     res.status(201).json({ response })
 

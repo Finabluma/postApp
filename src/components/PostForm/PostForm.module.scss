@@ -1,0 +1,26 @@
+.formContent {
+    width: 100%;
+    font-size: 18px;
+    padding: 1rem;
+    min-height: 7.3rem;
+    border: 1px solid #D8CECE;
+    border-radius: 5px;
+    margin-bottom: 1em;
+
+    &:focus {
+        outline-offset: -3px;
+        outline-width: 1px;
+        outline-color: pink;
+    }
+}
+
+.formButton {
+    border: none;
+    border-radius: 5px;
+    background-color: #6054A6;
+    color: white;
+    padding: 0.6em 1em;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+}

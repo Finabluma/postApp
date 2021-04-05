@@ -7,6 +7,7 @@ export async function getAllPosts() {
 }
 
 export async function createPost(data) {
+
   const user = auth.currentUser();
 
   await fetch(`${process.env.NEXT_PUBLIC_API_ENDPOINT}/api/posts`, {

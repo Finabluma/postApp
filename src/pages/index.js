@@ -7,9 +7,9 @@ import Post from '../components/Post'
 import PostForm from '../components/PostForm'
 import Bio from '../components/Bio'
 
-export default function Home({ posts: defaultPost }) {
+export default function Home({ posts: defaultPosts }) {
 
-  const [posts, updatePosts] = useState(defaultPost)
+  const [posts, updatePosts] = useState(defaultPosts)
 
   const postsSorted = posts.sort(function (a, b) {
     return new Date(b.date) - new Date(a.date);
@@ -29,7 +29,7 @@ export default function Home({ posts: defaultPost }) {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Post App | Finabluma</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
